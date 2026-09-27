@@ -14,8 +14,11 @@ const multiOptions = document.querySelector(".multi-options");
 
 const searchWeather = async()=>{
    await initialCityFetch()
+   if(weatherCities.length === 0){
+    alert("No location found")
+   }
    
-   if(weatherCities.length === 1){
+   else if (weatherCities.length === 1){
     selectedOption = 0
        await initialLatAndLonFetch()
        mainOnecityOutput(); 
@@ -46,7 +49,7 @@ searchInput.addEventListener("keydown",(e)=>{
    searchWeather();
    }
 })
-searchIcon.addEventListener("click",searchWeather())
+searchIcon.addEventListener("click",searchWeather)
 
   multiOptions.addEventListener("change",async()=>{
        dialogDiv.close()
@@ -58,7 +61,7 @@ await mainTwocityOutput();
 
 const initialCityFetch = async () =>{
     try{
-         const res = await fetch (`https://api.openweathermap.org/geo/1.0/direct?q=${searchInput.value},NG&limit=${5}&appid=f5157c578300b6e6122180b23b915d60`)
+         const res = await fetch (`https://api.openweathermap.org/geo/1.0/direct?q=${searchInput.value}&limit=${8}&appid=f5157c578300b6e6122180b23b915d60`)
 
     const initialSearchOutput = await res.json();
     
