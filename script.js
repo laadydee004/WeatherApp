@@ -51,7 +51,7 @@ await mainTwocityOutput();
 
 const initialCityFetch = async () =>{
     try{
-         const res = await fetch (`http://api.openweathermap.org/geo/1.0/direct?q=${searchInput.value},NG&limit=${5}&appid=f5157c578300b6e6122180b23b915d60`)
+         const res = await fetch (`https://api.openweathermap.org/geo/1.0/direct?q=${searchInput.value},NG&limit=${5}&appid=f5157c578300b6e6122180b23b915d60`)
 
     const initialSearchOutput = await res.json();
     
