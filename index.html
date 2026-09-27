@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <nav>
+   <div class="nav-logo">
+     <div class="weatherLogoText">
+        <div class="weatherLogo"><img src="./weatherLogo.png" alt=""></div>
+        <h1>Weather App</h1>
+     </div>
+      <span class="material-symbols-outlined">settings</span>
+   </div>
+   <div class="search-nav">
+        <div class="location-input-search">
+            <span class="material-symbols-outlined">location_on</span>
+            <input type="search" name="" id="search-input" placeholder="Enter city name...">
+        </div>
+        <div class="search-icon">
+            <span class="material-symbols-outlined">
+        search
+        </span>
+        </div>
+   </div>
+   </nav>
+   <main>
+        <div class="main-one">
+            <div class="main-city-display">
+                <p class="city">Lagos</p>
+                <p class="date-city">Monday, 15 Sep 2026</p>
+                <div class="logo-temperature">
+                    <div class="weather-logo"><img src="./weatherLogo.png" alt=""></div>
+                    <div>
+                        <h1 class="city-degree">28*c</h1>
+                        <p>Partly Cloud</p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-conditions">
+                <div class="weather-condition">
+                    <span class="material-symbols-outlined">
+                        device_thermostat
+                    </span>
+                    <div>
+                        <p>Feels like</p>
+                        <p class="degree-confirm">31</p>
+                    </div>
+                </div>
+                <div class="weather-condition">
+                    <span class="material-symbols-outlined">
+                    humidity_low
+                    </span>
+                    <div>
+                        <p>Humidity</p>
+                        <p class="humidity-confirm">78%</p>
+                    </div>
+                </div>
+                <div class="weather-condition">
+                    <span class="material-symbols-outlined">
+                    air
+                    </span>
+                    <div>
+                        <p>Wind</p>
+                        <p class="wind-confirm">12 km/h</p>
+                    </div>
+                </div>
+                <div class="weather-condition">
+                    <span class="material-symbols-outlined">
+                    location_on
+                    </span>
+                    <div>
+                        <p>location</p>
+                        <p class="degree-confirm">lagos, Nigeria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-two">
+           
+            <div class="main-two-box">
+                <h1>5-Day Forecast</h1>
+                <div class="main-two-flex">
+                    <div class="day">
+                            <p><strong>Tue</strong> <br>22 sep</p>
+                        <div class="upcoming-img"><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt=""></div>
+                        <p class="day-one-degree"><strong class="bold">30</strong>/24</p>
+                    </div>
+                    <div class="day">
+                        <p>Wed</p>
+                        <div class="upcoming-img"><img src="./weatherLogo.png" alt=""></div>
+                        <p class="day-two-degree"><strong class="bold">29</strong>/23</p>
+                    </div>
+                    <div class="day">
+                        <p>Thur</p>
+                        <div class="upcoming-img"><img src="./weatherLogo.png" alt=""></div>
+                        <p class="day-three-degree"><strong class="bold">28</strong>/22</p>
+                    </div>
+                    <div class="day">
+                        <p>Fri</p>
+                        <div class="upcoming-img"><img src="./weatherLogo.png" alt=""></div>
+                        <p class="day-four-degree"><strong class="bold">28</strong>/22</p>
+                    </div>
+                    <div class="day">
+                        <p>Sat</p>
+                        <div class="upcoming-img"><img src="./weatherLogo.png" alt=""></div>
+                        <p class="day-five-degree"><strong class="bold">28</strong>/22</p>
+                    </div>
+                </div>
+                <div >
+                <p class="footer">
+                <span class="material-symbols-outlined">
+                error
+                </span>
+                Search for a city to get the weather details
+                </p>
+                </div>
+     
+            </div>
+        </div>
+      
+   </main>
+<dialog class="dialog">
+    <select name="" id="" class="multi-options">
+        <option value="">Select option</option>
+    </select>
+</dialog>
+    <script src="./script.js"></script>
+</body>
+</html>
