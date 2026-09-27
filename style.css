@@ -149,12 +149,14 @@ nav{
     padding: 20px 0;
 }
 .dialog{
+    border-radius: 20px;
     width: 50%;
     margin: 10px auto;
-    padding: 0px;
+    padding: 5px;
 }
 .dialog select{
-width: 98%;
+    
+width: 100%;
 border: none;
 outline:none;
 }

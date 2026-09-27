@@ -12,7 +12,7 @@ const dialogDiv = document.querySelector(".dialog");
 const multiOptions = document.querySelector(".multi-options");
 // f5157c578300b6e6122180b23b915d60
 
- searchIcon.addEventListener("click",async()=>{
+const searchWeather = async()=>{
    await initialCityFetch()
    
    if(weatherCities.length === 1){
@@ -39,7 +39,14 @@ const multiOptions = document.querySelector(".multi-options");
    
 
   
+}
+
+searchInput.addEventListener("keydown",(e)=>{
+   if( e.key === "Enter"){
+   searchWeather();
+   }
 })
+searchIcon.addEventListener("click",searchWeather())
 
   multiOptions.addEventListener("change",async()=>{
        dialogDiv.close()
@@ -210,7 +217,7 @@ const mainOnecityOutput = () =>{
                     </span>
                     <div>
                         <p>Feels like</p>
-                        <p class="degree-confirm">${currentCityLatAndLOn['main']['feels_like']}</p>
+                        <p class="degree-confirm">${Math.round((currentCityLatAndLOn['main']['feels_like'])-273.15)}°C</p>
                     </div>
                 </div>
                 <div class="weather-condition">
@@ -219,7 +226,7 @@ const mainOnecityOutput = () =>{
                     </span>
                     <div>
                         <p>Humidity</p>
-                        <p class="humidity-confirm">${currentCityLatAndLOn.main.humidity}</p>
+                        <p class="humidity-confirm">${currentCityLatAndLOn.main.humidity}%</p>
                     </div>
                 </div>
                 <div class="weather-condition">
@@ -263,12 +270,7 @@ fiveDayIconForcast.forEach((icon,index)=>{
 })
 
 
-console.log(timeCheckResult);
-console.log(highAndLowTemp);
 
-console.log(fiveDayIconForcast);
-
-console.log(fiveDays);
 
 
   mainTwo.innerHTML =   `   
