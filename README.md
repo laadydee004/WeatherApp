@@ -31,3 +31,23 @@ A weather application built with HTML, CSS, and JavaScript that allows users to 
 ## Author
 
 Doyinsola Bello
+
+
+
+## Screenshot
+
+(weather-app.png)<img width="960" height="540" alt="WeatherAppJS" src="https://github.com/user-attachments/assets/0a671c32-a298-4f68-b72b-e8036df2e19c" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+Doyinsola Bello
